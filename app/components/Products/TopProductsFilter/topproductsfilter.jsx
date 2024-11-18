@@ -36,14 +36,18 @@ export default function TopProductsFilter() {
 
         {/* Product Grid */}
         <div className="product-grid">
-            {filteredProducts.map((product) => (
-            <div key={product.id} className="product-card">
+          {filteredProducts.map((product) => (
+            <div key={product.id} className="sjeb">
+              <div className="product-card">
                 <img src={product.image} alt={product.name} />
                 <h3>{product.name}</h3>
                 <p>${product.price}</p>
+              </div>
+              <button className="button-1">Add To Cart</button>
             </div>
-            ))}
+          ))}
         </div>
+
     </div>
   );
 }
